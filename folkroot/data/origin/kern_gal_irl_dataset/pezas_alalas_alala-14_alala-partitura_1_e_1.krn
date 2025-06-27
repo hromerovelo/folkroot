@@ -1,0 +1,39 @@
+!!!COM: Music21
+!!!OTL: Alalá
+!!!OMV: pezas_alalas_alala-14_alala-partitura.musicxml
+**kern
+*I"Bagpipes
+*I'Bag
+*clefG^2
+*k[]
+*M4/4
+*met(c)
+=1
+!LO:TX:a:t=Adagio
+*MM72
+!LO:TX:a:t=[quarter]=72
+2r
+4gg
+4gg
+=
+4ee
+4ee
+4ff
+4ff
+=
+4ee
+4dd
+4gg
+4gg
+=
+4ee
+4ee
+4ff
+4ff
+=
+2.ee
+4ff
+=
+1ee;
+=
+*-
