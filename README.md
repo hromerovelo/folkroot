@@ -8,6 +8,7 @@ This repository provides a novel methodology for the hierarchical analysis of mu
   - [Table of Contents](#table-of-contents)
   - [Methodology Overview](#methodology-overview)
   - [Key Features](#key-features)
+    - [Feature Types](#feature-types)
     - [Scores \& Phrases Processing](#scores--phrases-processing)
     - [Phrases Clustering](#phrases-clustering)
     - [Compute similarities](#compute-similarities)
@@ -52,6 +53,18 @@ Our methodology, illustrated below, is a multi-step process:
 ![The schema illustrates the proposed methodology. The different features are extracted from the scores. The scores are then compared using different similarity methods. For each method, a distance matrix between scores and a phylogenetic tree is obtained.](assets/methodology.png)
 
 ## Key Features
+
+### Feature Types
+
+The methodology extracts and analyzes different types of musical features:
+
+- **Diatonic** (D): Diatonic interval sequences representing melodic patterns within the key.
+- **Chromatic** (C): Chromatic interval sequences capturing all semitone relationships.
+- **Rhythmic** (R): Rhythmic ratio patterns representing temporal relationships between notes.
+- **Diatonic + Rhythmic** (DR): Combined diatonic intervals and rhythmic patterns.
+- **Chromatic + Rhythmic** (CR): Combined chromatic intervals and rhythmic patterns.
+
+These abbreviations (D, C, R, DR, CR) are used throughout the analysis results and visualizations.
 
 ### Scores & Phrases Processing
 
@@ -238,9 +251,13 @@ This generates:
 - Genre Separation Ratio (GSR) metrics
 - Comparative analysis across all trees
 
+The following figure shows the GSR metric results across different similarity methods, features, and genre combinations from the benchmark analysis:
+
+![GSR Metric Results](benchmark/gsr_metric/gsr_metric.png)
+
 ### Heatmap Comparison
 
-Compare distance matrices between different similarity methods:
+Compare distance matrices between different similarity methods. Example results from these comparisons can be found in the [*benchmark*](benchmark/) folder.
 
 ```bash
 cd folkroot/trees
@@ -294,6 +311,10 @@ This comprehensive analysis:
 - Calculates statistical significance.
 - Creates combined visualization with confidence intervals.
 - Provides z-score analysis for perfect classification vs. random chance.
+
+The following figure shows the combined results of the GSR sensitivity analysis and random trees baseline study:
+
+![GSR Analysis Results](benchmark/gsr_metric/gsr_analysis/gsr_analysis_results.png)
 
 ## Advanced Usage Examples
 
