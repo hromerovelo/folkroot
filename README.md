@@ -251,9 +251,9 @@ This generates:
 - Genre Separation Ratio (GSR) metrics
 - Comparative analysis across all trees
 
-The following figure shows the GSR metric results across different similarity methods, features, and genre combinations from the benchmark analysis:
+The following figure shows the GSR metric results across different similarity methods, features, and genre combinations from the [*benchmark*](benchmark/) analysis:
 
-![GSR Metric Results](benchmark/gsr_metric/gsr_metric.png)
+![Table presenting GSR (Genre Separation Ratio) values for each genre across different features—diatonic, chromatic, rhythmic, diatonic-rhythmic, and chromatic-rhythmic—and comparison methods: global, shared phrases, form, and three combined variants (form and shared phrases weighted 25/75, 50/50, and 75/25). The highest average GSR values, ranging from 1.16 to 1.21, are achieved using the combined method with 75% form and 25% shared phrases, followed closely by the form-only method with averages around 1.17. Genres such as Alalás, Polka, Slide, and Strathspey exhibit the highest GSR values, while the Irish Waltz genre consistently shows the lowest, approximately 0.75, indicating low intra-genre cohesion.](benchmark/gsr_metric/gsr_metric.png)
 
 ### Heatmap Comparison
 
@@ -314,7 +314,7 @@ This comprehensive analysis:
 
 The following figure shows the combined results of the GSR sensitivity analysis and random trees baseline study:
 
-![GSR Analysis Results](benchmark/gsr_metric/gsr_analysis/gsr_analysis_results.png)
+![Line plot showing the sensitivity analysis of the Genre Separation Ratio (GSR) under increasing levels of genre assignment noise. The curve starts high and drops sharply as noise increases, eventually converging near the random baseline. The GSR value for a perfectly classified genre tree is 51.0, while the average GSR across 10,000 randomly generated trees is 1.0. Statistical significance is extremely high, with a z-score of 1,915,375.16, confirming that structured genre trees differ markedly from random models.](benchmark/gsr_metric/gsr_analysis/gsr_analysis_results.png)
 
 ## Advanced Usage Examples
 
